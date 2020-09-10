@@ -1,0 +1,84 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Brattleboro\u0027s Rock Station",
+          "examplePhrases": [
+            "Alexa play nine nine five the beast",
+            "Alexa launch 995 the beast"
+          ],
+          "keywords": [
+            "the",
+            "beast",
+            "in",
+            "the",
+            "east",
+            "brattleboro\u0027s",
+            "greatest",
+            "rock",
+            "radio",
+            "station"
+          ],
+          "name": "99.5 The Beast",
+          "description": "Unleash The Beast of the East with 99.5! Sit back as we drive top down on the highway of history\u0027s greatest rock! Stream our live and local radio station 24/7 by giving Alexa the simple command \"Hey Alexa, play nine nine five the beast!\"",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [
+          {
+            "sourceLocale": "en-US",
+            "language": "en"
+          }
+        ],
+        "isActive": true
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "The skill is designed to play our radio station that is hosted online.\n\nplay nine nine five the beast",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:757287213578:function:498616c1-c2d8-418d-985b-dbec5cd799ca:Release_0"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:757287213578:function:498616c1-c2d8-418d-985b-dbec5cd799ca:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:757287213578:function:498616c1-c2d8-418d-985b-dbec5cd799ca:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:757287213578:function:498616c1-c2d8-418d-985b-dbec5cd799ca:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": true,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
